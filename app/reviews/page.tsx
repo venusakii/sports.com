@@ -7,6 +7,7 @@ export default function ReviewsPage() {
   const products = [
     {
       id: 1,
+      slug: "premium-yoga-mat",
       name: "Premium Yoga Mat",
       rating: 4.8,
       reviews: 234,
@@ -16,6 +17,7 @@ export default function ReviewsPage() {
     },
     {
       id: 2,
+      slug: "professional-swim-goggles",
       name: "Professional Swim Goggles",
       rating: 4.9,
       reviews: 189,
@@ -25,6 +27,7 @@ export default function ReviewsPage() {
     },
     {
       id: 3,
+      slug: "resistance-bands-set",
       name: "Resistance Bands Set",
       rating: 4.7,
       reviews: 312,
@@ -34,6 +37,7 @@ export default function ReviewsPage() {
     },
     {
       id: 4,
+      slug: "foam-roller-pro",
       name: "Foam Roller Pro",
       rating: 4.6,
       reviews: 156,
@@ -43,6 +47,7 @@ export default function ReviewsPage() {
     },
     {
       id: 5,
+      slug: "ultra-grip-yoga-mat",
       name: "Ultra-Grip Yoga Mat",
       rating: 5.0,
       reviews: 421,
@@ -52,6 +57,7 @@ export default function ReviewsPage() {
     },
     {
       id: 6,
+      slug: "adjustable-dumbbells",
       name: "Adjustable Dumbbells",
       rating: 4.9,
       reviews: 298,
@@ -61,6 +67,7 @@ export default function ReviewsPage() {
     },
     {
       id: 7,
+      slug: "swimming-cap-goggles",
       name: "Swimming Cap & Goggles",
       rating: 4.8,
       reviews: 267,
@@ -70,6 +77,7 @@ export default function ReviewsPage() {
     },
     {
       id: 8,
+      slug: "yoga-block-set",
       name: "Yoga Block Set",
       rating: 4.7,
       reviews: 178,
@@ -129,7 +137,7 @@ export default function ReviewsPage() {
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                    <Link href={`/reviews/${product.id}`}>Read Review</Link>
+                    <Link href={`/reviews/${product.slug}`}>Read Review</Link>
                   </Button>
                 </CardFooter>
               </Card>

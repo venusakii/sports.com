@@ -20,7 +20,7 @@ const productData: Record<
     specs: { label: string; value: string }[]
   }
 > = {
-  "1": {
+  "premium-yoga-mat": {
     id: 1,
     name: "Premium Yoga Mat",
     rating: 4.8,
@@ -45,7 +45,7 @@ const productData: Record<
       { label: "Weight", value: "2.5 lbs" },
     ],
   },
-  "2": {
+  "professional-swim-goggles": {
     id: 2,
     name: "Professional Swim Goggles",
     rating: 4.9,
@@ -70,7 +70,7 @@ const productData: Record<
       { label: "Fit", value: "Adjustable" },
     ],
   },
-  "3": {
+  "resistance-bands-set": {
     id: 3,
     name: "Resistance Bands Set",
     rating: 4.7,
@@ -95,10 +95,125 @@ const productData: Record<
       { label: "Accessories", value: "Door anchor, handles, ankle straps" },
     ],
   },
+  "foam-roller-pro": {
+    id: 4,
+    name: "Foam Roller Pro",
+    rating: 4.6,
+    reviews: 156,
+    image: "/foam-roller-fitness.jpg",
+    category: "Recovery",
+    description: "High-density foam for deep tissue massage and muscle recovery",
+    amazonLink: "https://amazon.com",
+    pros: [
+      "High-density foam maintains shape",
+      "Textured surface for deep tissue work",
+      "Lightweight and portable",
+      "Great for post-workout recovery",
+    ],
+    cons: ["Can be intense for beginners", "May be too firm for some users"],
+    fullReview:
+      "The Foam Roller Pro is an excellent tool for muscle recovery and myofascial release. Its high-density construction ensures it won't lose shape over time, even with daily use. The textured surface provides effective deep tissue massage, helping to release tight muscles and improve flexibility. While it may feel intense for first-time users, the benefits for recovery are substantial.",
+    specs: [
+      { label: "Length", value: "36 inches" },
+      { label: "Diameter", value: "6 inches" },
+      { label: "Material", value: "High-density EVA foam" },
+      { label: "Weight Capacity", value: "500 lbs" },
+    ],
+  },
+  "ultra-grip-yoga-mat": {
+    id: 5,
+    name: "Ultra-Grip Yoga Mat",
+    rating: 5.0,
+    reviews: 421,
+    image: "/premium-yoga-mat-texture.jpg",
+    category: "Fitness Mats",
+    description: "Premium non-slip surface with superior cushioning",
+    amazonLink: "https://amazon.com",
+    pros: [
+      "Best-in-class grip technology",
+      "Extra cushioning for comfort",
+      "Durable and long-lasting",
+      "Easy to clean",
+    ],
+    cons: ["Premium price point"],
+    fullReview:
+      "The Ultra-Grip Yoga Mat sets the gold standard for yoga mats. Its revolutionary grip technology ensures you stay stable in even the most challenging poses, while the premium cushioning protects your joints without sacrificing stability. This mat has earned its perfect rating through consistent performance and durability that outlasts competitors.",
+    specs: [
+      { label: "Thickness", value: "5mm" },
+      { label: "Material", value: "Premium PVC" },
+      { label: "Dimensions", value: '72" x 26"' },
+      { label: "Weight", value: "3 lbs" },
+    ],
+  },
+  "adjustable-dumbbells": {
+    id: 6,
+    name: "Adjustable Dumbbells",
+    rating: 4.9,
+    reviews: 298,
+    image: "/adjustable-dumbbells-set.jpg",
+    category: "Training",
+    description: "Space-saving design with quick weight adjustment system",
+    amazonLink: "https://amazon.com",
+    pros: ["Replaces 15 sets of dumbbells", "Quick adjustment mechanism", "Compact storage", "Durable construction"],
+    cons: ["Higher initial investment", "Adjustment dial can stick occasionally"],
+    fullReview:
+      "These adjustable dumbbells are a game-changer for home gyms. The quick-adjustment system allows you to change weights in seconds, making your workouts more efficient. The space-saving design is perfect for smaller workout areas, and the build quality ensures these will last for years. While the upfront cost is higher than traditional dumbbells, the versatility and convenience make them worth every penny.",
+    specs: [
+      { label: "Weight Range", value: "5-52.5 lbs per dumbbell" },
+      { label: "Adjustment", value: "15 weight settings" },
+      { label: "Material", value: "Steel and plastic" },
+      { label: "Warranty", value: "2 years" },
+    ],
+  },
+  "swimming-cap-goggles": {
+    id: 7,
+    name: "Swimming Cap & Goggles",
+    rating: 4.8,
+    reviews: 267,
+    image: "/swimming-cap-goggles-set.jpg",
+    category: "Swimming",
+    description: "Complete swimming set with silicone cap and anti-fog goggles",
+    amazonLink: "https://amazon.com",
+    pros: [
+      "Complete set for convenience",
+      "Comfortable silicone cap",
+      "Anti-fog goggles included",
+      "Great value bundle",
+    ],
+    cons: ["Cap sizing may vary", "Goggles not suitable for competitive swimming"],
+    fullReview:
+      "This swimming set offers excellent value for recreational swimmers. The silicone cap is comfortable and durable, while the included goggles provide clear vision with effective anti-fog coating. While not designed for competitive use, this set is perfect for fitness swimming, water aerobics, or casual pool sessions. The convenience of having both items in one package makes it an attractive option for beginners.",
+    specs: [
+      { label: "Cap Material", value: "100% Silicone" },
+      { label: "Cap Size", value: "One size fits most" },
+      { label: "Goggle Lens", value: "Polycarbonate" },
+      { label: "UV Protection", value: "Yes" },
+    ],
+  },
+  "yoga-block-set": {
+    id: 8,
+    name: "Yoga Block Set",
+    rating: 4.7,
+    reviews: 178,
+    image: "/yoga-accessories-blocks-straps.jpg",
+    category: "Yoga",
+    description: "Lightweight foam blocks for improved flexibility and balance",
+    amazonLink: "https://amazon.com",
+    pros: ["Set of 2 blocks for versatility", "Lightweight EVA foam", "Non-slip surface", "Affordable price"],
+    cons: ["May compress over time with heavy use", "Limited color options"],
+    fullReview:
+      "These yoga blocks are essential props for practitioners of all levels. The lightweight EVA foam construction makes them easy to position and move during practice, while the non-slip surface ensures stability. Whether you're working on flexibility, balance, or proper alignment, these blocks provide the support you need. The set of two allows for symmetrical support in various poses.",
+    specs: [
+      { label: "Dimensions", value: '9" x 6" x 4"' },
+      { label: "Material", value: "EVA Foam" },
+      { label: "Weight", value: "4 oz each" },
+      { label: "Quantity", value: "2 blocks" },
+    ],
+  },
 }
 
-export default function ProductReviewPage({ params }: { params: { id: string } }) {
-  const product = productData[params.id] || productData["1"]
+export default function ProductReviewPage({ params }: { params: { slug: string } }) {
+  const product = productData[params.slug] || productData["premium-yoga-mat"]
 
   return (
     <div className="min-h-screen">

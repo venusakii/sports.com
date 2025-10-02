@@ -7,6 +7,7 @@ export function BestSellers() {
   const bestSellers = [
     {
       id: 5,
+      slug: "ultra-grip-yoga-mat",
       name: "Ultra-Grip Yoga Mat",
       rating: 5.0,
       reviews: 421,
@@ -15,6 +16,7 @@ export function BestSellers() {
     },
     {
       id: 6,
+      slug: "adjustable-dumbbells",
       name: "Adjustable Dumbbells",
       rating: 4.9,
       reviews: 298,
@@ -23,6 +25,7 @@ export function BestSellers() {
     },
     {
       id: 7,
+      slug: "swimming-cap-goggles",
       name: "Swimming Cap & Goggles",
       rating: 4.8,
       reviews: 267,
@@ -41,7 +44,7 @@ export function BestSellers() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {bestSellers.map((product) => (
-            <Link key={product.id} href={`/reviews/${product.id}`} className="block">
+            <Link key={product.id} href={`/reviews/${product.slug}`} className="block">
               <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer h-full">
                 <CardContent className="p-6">
                   <div className="relative mb-4">

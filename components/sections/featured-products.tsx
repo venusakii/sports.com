@@ -7,6 +7,7 @@ export function FeaturedProducts() {
   const products = [
     {
       id: 1,
+      slug: "premium-yoga-mat",
       name: "Premium Yoga Mat",
       rating: 4.8,
       reviews: 234,
@@ -15,6 +16,7 @@ export function FeaturedProducts() {
     },
     {
       id: 2,
+      slug: "professional-swim-goggles",
       name: "Professional Swim Goggles",
       rating: 4.9,
       reviews: 189,
@@ -23,6 +25,7 @@ export function FeaturedProducts() {
     },
     {
       id: 3,
+      slug: "resistance-bands-set",
       name: "Resistance Bands Set",
       rating: 4.7,
       reviews: 312,
@@ -31,6 +34,7 @@ export function FeaturedProducts() {
     },
     {
       id: 4,
+      slug: "foam-roller-pro",
       name: "Foam Roller Pro",
       rating: 4.6,
       reviews: 156,
@@ -51,7 +55,7 @@ export function FeaturedProducts() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <Link key={product.id} href={`/reviews/${product.id}`} className="block">
+            <Link key={product.id} href={`/reviews/${product.slug}`} className="block">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
                 <CardContent className="p-0">
                   <div className="relative h-64">
